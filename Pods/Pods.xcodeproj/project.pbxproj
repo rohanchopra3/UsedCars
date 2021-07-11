@@ -1,0 +1,943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DB8C5382ED399CB13FD9D767A217A99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		43CF896AA9C2BD8B970DBB92CD2DC6CA /* Pods-Used Cars-Used CarsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C9C2F22B227352CD591A456559C81E /* Pods-Used Cars-Used CarsUITests-dummy.m */; };
+		44E3E7721849AF7AE0D2D031613F36D7 /* Pods-Used Cars-Used CarsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF2DFEBC7612A970C4F79E608D4A7979 /* Pods-Used Cars-Used CarsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E4B121CC1AB1D8E9FFDEB815FAA69D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		71E3AA50EF347F76BBFADECDC9589D61 /* Pods-Used CarsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F425ABAAB6424E2E480CE4A6BC2CFE34 /* Pods-Used CarsTests-dummy.m */; };
+		7835E6252D6FA9706621BD24C77092FE /* Pods-Used Cars-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25FA4A9A540163D8DA108C08334FAB5E /* Pods-Used Cars-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78F4D22BB2451DB9187EF7D5477694B4 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 750DB8278285D9AA7AE2676EBA1598BC /* SwiftyJSON-dummy.m */; };
+		986F5EA913F735271C3E356969D6AE5B /* Pods-Used CarsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F8BC2FC16CA1F9F698A90D3B158DA6 /* Pods-Used CarsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A200E78483E4C31A58D4604329E1DE6A /* Pods-Used Cars-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35166B68F35E6FAFB6D8601CAF297886 /* Pods-Used Cars-dummy.m */; };
+		B6469488AD974246505E11BFCE5E0214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C0FC7AC162F03324D980918731C73AF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		CEF01E5C59C21449A684F5D2CD9A9B8F /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF09CCB69C40B5A7AD0C1A35F77E609 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1DE19C7B30980994F39D36EC0338A1D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CA7CFF9EB8463DEAAC7B9E1C691227 /* SwiftyJSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F02972BBE823A73AA2FAA6223B52839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8C0DF243833B4BFC34C203F540C6ED5;
+			remoteInfo = "Pods-Used Cars";
+		};
+		B6758429076F238409AB671D15354C42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BA85977ED7143F31E70A74EBAE6F257;
+			remoteInfo = SwiftyJSON;
+		};
+		D431FEC506E640D22611CA1B72EBFBD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BA85977ED7143F31E70A74EBAE6F257;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E7ADFD469D63E470BC8958D15F3D71 /* Pods-Used Cars-Used CarsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Used Cars-Used CarsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		01A49BDA4EA6E8BD473ECFE197DCE3DD /* Pods-Used Cars-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Used Cars-resources.sh"; sourceTree = "<group>"; };
+		020B22D1EC385D25F5385CFA1D934D08 /* Pods-Used CarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Used CarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		10F9FA71AF46F4CE0694DCBD62D3D761 /* Pods-Used CarsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Used CarsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		123DE601729C483B2C786CA4384BF127 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F8BC2FC16CA1F9F698A90D3B158DA6 /* Pods-Used CarsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Used CarsTests-umbrella.h"; sourceTree = "<group>"; };
+		18D4FD106378936165589EB22E23643F /* Pods-Used Cars-Used CarsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Used Cars-Used CarsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		22A4FBC9C57BEE799528651D85F4EF3A /* Pods-Used Cars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Used Cars.debug.xcconfig"; sourceTree = "<group>"; };
+		256182E34A6D1174068FD84C59116472 /* Pods-Used Cars-Used CarsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Used Cars-Used CarsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		25FA4A9A540163D8DA108C08334FAB5E /* Pods-Used Cars-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Used Cars-umbrella.h"; sourceTree = "<group>"; };
+		28C9C2F22B227352CD591A456559C81E /* Pods-Used Cars-Used CarsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Used Cars-Used CarsUITests-dummy.m"; sourceTree = "<group>"; };
+		2C1FB7D18F0FCAC7AE54FB730A034360 /* Pods-Used Cars-Used CarsUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Used Cars-Used CarsUITests-resources.sh"; sourceTree = "<group>"; };
+		35166B68F35E6FAFB6D8601CAF297886 /* Pods-Used Cars-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Used Cars-dummy.m"; sourceTree = "<group>"; };
+		406138BA958339EA589F7BFA6F943620 /* Pods-Used CarsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Used CarsTests-resources.sh"; sourceTree = "<group>"; };
+		41ED655BB9806FEE42F1DC3BF875BFD8 /* Pods_Used_Cars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Used_Cars.framework; path = "Pods-Used Cars.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44346989BA4BE8E630F26BF2A17F35D8 /* Pods-Used Cars.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Used Cars.modulemap"; sourceTree = "<group>"; };
+		52D008775B0EDC4758FD2003836DECDC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5340F8285D58D6F0BFC8C8575E074BEB /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		535CCFAED789E4C0D26CFC097A1C4F3A /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		53CA7CFF9EB8463DEAAC7B9E1C691227 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		55BD1894B60D2B48F7797527019FD8D2 /* Pods-Used Cars-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Used Cars-acknowledgements.markdown"; sourceTree = "<group>"; };
+		57C4865B2CFE50660D4620FFFEA41EC7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E78DCE58BBB14A4C807F07DC45CAF7 /* Pods-Used Cars-Used CarsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Used Cars-Used CarsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6927BA806A9DC59E7BB30ED0E9D70C08 /* Pods-Used Cars-Used CarsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Used Cars-Used CarsUITests.modulemap"; sourceTree = "<group>"; };
+		6ECD1529256470026F3C8F1A8C5C6052 /* Pods-Used Cars-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Used Cars-acknowledgements.plist"; sourceTree = "<group>"; };
+		727BF8609782F5EEA5F1C3B20A9987F5 /* Pods_Used_CarsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Used_CarsTests.framework; path = "Pods-Used CarsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		750DB8278285D9AA7AE2676EBA1598BC /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		7FF09CCB69C40B5A7AD0C1A35F77E609 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		811F92F16202D9DA384D3D51F44B5D08 /* Pods-Used CarsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Used CarsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8FA022DBAA70C72BD7078E57B2472BFA /* Pods-Used CarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Used CarsTests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96C667EEB6DE760AEC18DDA31715D3B6 /* Pods-Used Cars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Used Cars.release.xcconfig"; sourceTree = "<group>"; };
+		AEB1A5FAE034F347FB041879BD444188 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C090A463B595CF98A8779E1C37A8A63B /* Pods-Used Cars-Used CarsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Used Cars-Used CarsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C45BD610C7ACDBE6E57DDD1E86A55779 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE24062A09C4B54FC38D04DF65EC89C6 /* Pods-Used CarsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Used CarsTests.modulemap"; sourceTree = "<group>"; };
+		DA3D84DA964551E5DF91307B450A0BB2 /* Pods-Used CarsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Used CarsTests-frameworks.sh"; sourceTree = "<group>"; };
+		DF2DFEBC7612A970C4F79E608D4A7979 /* Pods-Used Cars-Used CarsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Used Cars-Used CarsUITests-umbrella.h"; sourceTree = "<group>"; };
+		E0FD32C81EACD0ED91DBABD1EE13FD20 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		E60434BDDB771A518566105DAA68A360 /* Pods-Used Cars-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Used Cars-frameworks.sh"; sourceTree = "<group>"; };
+		EC40C2A051B9CA74EFF4D6D0068C249E /* Pods_Used_Cars_Used_CarsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Used_Cars_Used_CarsUITests.framework; path = "Pods-Used Cars-Used CarsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F425ABAAB6424E2E480CE4A6BC2CFE34 /* Pods-Used CarsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Used CarsTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C10196E52770FB5AD21EA664F7D4CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6469488AD974246505E11BFCE5E0214 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995BA7FF7D78785693088E7EF0251115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E4B121CC1AB1D8E9FFDEB815FAA69D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C641C413C9971AE2CBE9074B49E67FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FC7AC162F03324D980918731C73AF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F46ABAE12CAA227637254CCC1B32CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB8C5382ED399CB13FD9D767A217A99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CA0E19D371089CEE299E567996C0A91 /* Pods-Used Cars-Used CarsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C45BD610C7ACDBE6E57DDD1E86A55779 /* Info.plist */,
+				6927BA806A9DC59E7BB30ED0E9D70C08 /* Pods-Used Cars-Used CarsUITests.modulemap */,
+				00E7ADFD469D63E470BC8958D15F3D71 /* Pods-Used Cars-Used CarsUITests-acknowledgements.markdown */,
+				C090A463B595CF98A8779E1C37A8A63B /* Pods-Used Cars-Used CarsUITests-acknowledgements.plist */,
+				28C9C2F22B227352CD591A456559C81E /* Pods-Used Cars-Used CarsUITests-dummy.m */,
+				256182E34A6D1174068FD84C59116472 /* Pods-Used Cars-Used CarsUITests-frameworks.sh */,
+				2C1FB7D18F0FCAC7AE54FB730A034360 /* Pods-Used Cars-Used CarsUITests-resources.sh */,
+				DF2DFEBC7612A970C4F79E608D4A7979 /* Pods-Used Cars-Used CarsUITests-umbrella.h */,
+				18D4FD106378936165589EB22E23643F /* Pods-Used Cars-Used CarsUITests.debug.xcconfig */,
+				59E78DCE58BBB14A4C807F07DC45CAF7 /* Pods-Used Cars-Used CarsUITests.release.xcconfig */,
+			);
+			name = "Pods-Used Cars-Used CarsUITests";
+			path = "Target Support Files/Pods-Used Cars-Used CarsUITests";
+			sourceTree = "<group>";
+		};
+		5062DF589466D45E84DEA558B06932A6 /* Pods-Used Cars */ = {
+			isa = PBXGroup;
+			children = (
+				123DE601729C483B2C786CA4384BF127 /* Info.plist */,
+				44346989BA4BE8E630F26BF2A17F35D8 /* Pods-Used Cars.modulemap */,
+				55BD1894B60D2B48F7797527019FD8D2 /* Pods-Used Cars-acknowledgements.markdown */,
+				6ECD1529256470026F3C8F1A8C5C6052 /* Pods-Used Cars-acknowledgements.plist */,
+				35166B68F35E6FAFB6D8601CAF297886 /* Pods-Used Cars-dummy.m */,
+				E60434BDDB771A518566105DAA68A360 /* Pods-Used Cars-frameworks.sh */,
+				01A49BDA4EA6E8BD473ECFE197DCE3DD /* Pods-Used Cars-resources.sh */,
+				25FA4A9A540163D8DA108C08334FAB5E /* Pods-Used Cars-umbrella.h */,
+				22A4FBC9C57BEE799528651D85F4EF3A /* Pods-Used Cars.debug.xcconfig */,
+				96C667EEB6DE760AEC18DDA31715D3B6 /* Pods-Used Cars.release.xcconfig */,
+			);
+			name = "Pods-Used Cars";
+			path = "Target Support Files/Pods-Used Cars";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6DCD5435CBA31EF033601C75EC1E961D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5062DF589466D45E84DEA558B06932A6 /* Pods-Used Cars */,
+				3CA0E19D371089CEE299E567996C0A91 /* Pods-Used Cars-Used CarsUITests */,
+				D4E7801B40E890E426A13B3C7FB050DE /* Pods-Used CarsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		769176AED78170486F773F9BC4474176 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				53CA7CFF9EB8463DEAAC7B9E1C691227 /* SwiftyJSON.swift */,
+				B13DA4EDADF45239B7E2894BA6A8B976 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
+				B818D3343BC8AF2730384D4811A42F43 /* Products */,
+				6DCD5435CBA31EF033601C75EC1E961D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B13DA4EDADF45239B7E2894BA6A8B976 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57C4865B2CFE50660D4620FFFEA41EC7 /* Info.plist */,
+				535CCFAED789E4C0D26CFC097A1C4F3A /* SwiftyJSON.modulemap */,
+				E0FD32C81EACD0ED91DBABD1EE13FD20 /* SwiftyJSON.xcconfig */,
+				750DB8278285D9AA7AE2676EBA1598BC /* SwiftyJSON-dummy.m */,
+				5340F8285D58D6F0BFC8C8575E074BEB /* SwiftyJSON-prefix.pch */,
+				7FF09CCB69C40B5A7AD0C1A35F77E609 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		B818D3343BC8AF2730384D4811A42F43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41ED655BB9806FEE42F1DC3BF875BFD8 /* Pods_Used_Cars.framework */,
+				EC40C2A051B9CA74EFF4D6D0068C249E /* Pods_Used_Cars_Used_CarsUITests.framework */,
+				727BF8609782F5EEA5F1C3B20A9987F5 /* Pods_Used_CarsTests.framework */,
+				AEB1A5FAE034F347FB041879BD444188 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				769176AED78170486F773F9BC4474176 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4E7801B40E890E426A13B3C7FB050DE /* Pods-Used CarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				52D008775B0EDC4758FD2003836DECDC /* Info.plist */,
+				CE24062A09C4B54FC38D04DF65EC89C6 /* Pods-Used CarsTests.modulemap */,
+				811F92F16202D9DA384D3D51F44B5D08 /* Pods-Used CarsTests-acknowledgements.markdown */,
+				10F9FA71AF46F4CE0694DCBD62D3D761 /* Pods-Used CarsTests-acknowledgements.plist */,
+				F425ABAAB6424E2E480CE4A6BC2CFE34 /* Pods-Used CarsTests-dummy.m */,
+				DA3D84DA964551E5DF91307B450A0BB2 /* Pods-Used CarsTests-frameworks.sh */,
+				406138BA958339EA589F7BFA6F943620 /* Pods-Used CarsTests-resources.sh */,
+				16F8BC2FC16CA1F9F698A90D3B158DA6 /* Pods-Used CarsTests-umbrella.h */,
+				020B22D1EC385D25F5385CFA1D934D08 /* Pods-Used CarsTests.debug.xcconfig */,
+				8FA022DBAA70C72BD7078E57B2472BFA /* Pods-Used CarsTests.release.xcconfig */,
+			);
+			name = "Pods-Used CarsTests";
+			path = "Target Support Files/Pods-Used CarsTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1B10D70D66E57B43849D9B66DE7E7FF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986F5EA913F735271C3E356969D6AE5B /* Pods-Used CarsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438B7BCD70BBC7ECF2A554F71BE39A66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7835E6252D6FA9706621BD24C77092FE /* Pods-Used Cars-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B415314FA48CF7943C36B4D0E950044 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF01E5C59C21449A684F5D2CD9A9B8F /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C740D5B314430EF52D29D3B50F1B23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E3E7721849AF7AE0D2D031613F36D7 /* Pods-Used Cars-Used CarsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0BA85977ED7143F31E70A74EBAE6F257 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B8D5574C41535B2E890F829DFEAB46 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				70B274D0C6F43CB20C3DF32F387B068B /* Sources */,
+				C641C413C9971AE2CBE9074B49E67FB8 /* Frameworks */,
+				5B415314FA48CF7943C36B4D0E950044 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = AEB1A5FAE034F347FB041879BD444188 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66C860BAC558A21234387C212B4CFCC0 /* Pods-Used Cars-Used CarsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89B33BBB7A1D25B8E10F95949ECBEABD /* Build configuration list for PBXNativeTarget "Pods-Used Cars-Used CarsUITests" */;
+			buildPhases = (
+				CCA99067F6360F6120E59FCBFC000E02 /* Sources */,
+				F9F46ABAE12CAA227637254CCC1B32CE /* Frameworks */,
+				A8C740D5B314430EF52D29D3B50F1B23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B16431D1170DB23472734866E7A23A3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Used Cars-Used CarsUITests";
+			productName = "Pods-Used Cars-Used CarsUITests";
+			productReference = EC40C2A051B9CA74EFF4D6D0068C249E /* Pods_Used_Cars_Used_CarsUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8C0DF243833B4BFC34C203F540C6ED5 /* Pods-Used Cars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA14FD161313CB5AD2127238B1B7C43 /* Build configuration list for PBXNativeTarget "Pods-Used Cars" */;
+			buildPhases = (
+				17BA130E2DFAC78E3E952CE1570C02A4 /* Sources */,
+				6C10196E52770FB5AD21EA664F7D4CBB /* Frameworks */,
+				438B7BCD70BBC7ECF2A554F71BE39A66 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2D05254194B2D236584858106AEABD6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Used Cars";
+			productName = "Pods-Used Cars";
+			productReference = 41ED655BB9806FEE42F1DC3BF875BFD8 /* Pods_Used_Cars.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED6794A82C7CFD68BA42DA49F6184433 /* Pods-Used CarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F267361A927BC85573F8A651AE7D36B /* Build configuration list for PBXNativeTarget "Pods-Used CarsTests" */;
+			buildPhases = (
+				24F65D136229706307968EA83494C2AB /* Sources */,
+				995BA7FF7D78785693088E7EF0251115 /* Frameworks */,
+				1B10D70D66E57B43849D9B66DE7E7FF0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C556EBAEC7AAB1BF22BC5BEC9B437FE /* PBXTargetDependency */,
+			);
+			name = "Pods-Used CarsTests";
+			productName = "Pods-Used CarsTests";
+			productReference = 727BF8609782F5EEA5F1C3B20A9987F5 /* Pods_Used_CarsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B818D3343BC8AF2730384D4811A42F43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8C0DF243833B4BFC34C203F540C6ED5 /* Pods-Used Cars */,
+				66C860BAC558A21234387C212B4CFCC0 /* Pods-Used Cars-Used CarsUITests */,
+				ED6794A82C7CFD68BA42DA49F6184433 /* Pods-Used CarsTests */,
+				0BA85977ED7143F31E70A74EBAE6F257 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17BA130E2DFAC78E3E952CE1570C02A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A200E78483E4C31A58D4604329E1DE6A /* Pods-Used Cars-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F65D136229706307968EA83494C2AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E3AA50EF347F76BBFADECDC9589D61 /* Pods-Used CarsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B274D0C6F43CB20C3DF32F387B068B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F4D22BB2451DB9187EF7D5477694B4 /* SwiftyJSON-dummy.m in Sources */,
+				E1DE19C7B30980994F39D36EC0338A1D /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA99067F6360F6120E59FCBFC000E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43CF896AA9C2BD8B970DBB92CD2DC6CA /* Pods-Used Cars-Used CarsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C556EBAEC7AAB1BF22BC5BEC9B437FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Used Cars";
+			target = A8C0DF243833B4BFC34C203F540C6ED5 /* Pods-Used Cars */;
+			targetProxy = 7F02972BBE823A73AA2FAA6223B52839 /* PBXContainerItemProxy */;
+		};
+		3B16431D1170DB23472734866E7A23A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 0BA85977ED7143F31E70A74EBAE6F257 /* SwiftyJSON */;
+			targetProxy = B6758429076F238409AB671D15354C42 /* PBXContainerItemProxy */;
+		};
+		B2D05254194B2D236584858106AEABD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 0BA85977ED7143F31E70A74EBAE6F257 /* SwiftyJSON */;
+			targetProxy = D431FEC506E640D22611CA1B72EBFBD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08C17F9814A7E1BEF7F92ACD8D4B216F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C667EEB6DE760AEC18DDA31715D3B6 /* Pods-Used Cars.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Used Cars/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Used Cars/Pods-Used Cars.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1B3A84441AFABBF88869B47B0B87EF48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4058F5281A75064B9E4D1B05B43F72BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E78DCE58BBB14A4C807F07DC45CAF7 /* Pods-Used Cars-Used CarsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Used Cars-Used CarsUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Used Cars-Used CarsUITests/Pods-Used Cars-Used CarsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		576245092F565B0384E098D8A532B51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A4FBC9C57BEE799528651D85F4EF3A /* Pods-Used Cars.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Used Cars/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Used Cars/Pods-Used Cars.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D64AB74419C6AF165E5F494596C82BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D4FD106378936165589EB22E23643F /* Pods-Used Cars-Used CarsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Used Cars-Used CarsUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Used Cars-Used CarsUITests/Pods-Used Cars-Used CarsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E3365FAB7492FD6CFE73D6A8D5C687B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FD32C81EACD0ED91DBABD1EE13FD20 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		769B6EBFC1597FFF7089EF98749651F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 020B22D1EC385D25F5385CFA1D934D08 /* Pods-Used CarsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Used CarsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Used CarsTests/Pods-Used CarsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C6E01F8C5FC0A67A843A6879E89CC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C32599FEA670E2194D02452AD823ABCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA022DBAA70C72BD7078E57B2472BFA /* Pods-Used CarsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Used CarsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Used CarsTests/Pods-Used CarsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9B725D96F68D72F33986AB06A576753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FD32C81EACD0ED91DBABD1EE13FD20 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F267361A927BC85573F8A651AE7D36B /* Build configuration list for PBXNativeTarget "Pods-Used CarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				769B6EBFC1597FFF7089EF98749651F0 /* Debug */,
+				C32599FEA670E2194D02452AD823ABCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B3A84441AFABBF88869B47B0B87EF48 /* Debug */,
+				9C6E01F8C5FC0A67A843A6879E89CC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B8D5574C41535B2E890F829DFEAB46 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E3365FAB7492FD6CFE73D6A8D5C687B /* Debug */,
+				F9B725D96F68D72F33986AB06A576753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B33BBB7A1D25B8E10F95949ECBEABD /* Build configuration list for PBXNativeTarget "Pods-Used Cars-Used CarsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D64AB74419C6AF165E5F494596C82BD /* Debug */,
+				4058F5281A75064B9E4D1B05B43F72BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA14FD161313CB5AD2127238B1B7C43 /* Build configuration list for PBXNativeTarget "Pods-Used Cars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576245092F565B0384E098D8A532B51F /* Debug */,
+				08C17F9814A7E1BEF7F92ACD8D4B216F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

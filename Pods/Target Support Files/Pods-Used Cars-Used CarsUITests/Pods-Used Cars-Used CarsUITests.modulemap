@@ -1,0 +1,6 @@
+framework module Pods_Used_Cars_Used_CarsUITests {
+  umbrella header "Pods-Used Cars-Used CarsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
