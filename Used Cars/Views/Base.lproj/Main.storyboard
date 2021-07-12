@@ -3,6 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,38 +45,132 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xc3-jE-VHE">
-                            <size key="itemSize" width="414" height="135"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xc3-jE-VHE">
+                            <size key="itemSize" width="414" height="171"/>
+                            <size key="estimatedItemSize" width="414" height="171"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="t8O-Sm-TI8" customClass="CarsCollectionViewCell" customModule="Used_Cars" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qhk-od-ZEK">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cn5-FR-dqj">
-                                            <rect key="frame" x="8" y="88" width="398" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="0.2259127377" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SXL-61-ete">
+                                            <rect key="frame" x="0.0" y="10" width="414" height="160"/>
+                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="160" id="AaU-Ad-1wj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="gzN-Vj-DGt">
+                                            <rect key="frame" x="0.0" y="270" width="414" height="20"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6h-uM-DxT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="157" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="tintColor" red="0.0" green="0.41176470590000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="917-365-3869">
+                                                        <color key="titleColor" red="0.0" green="0.41214347009218194" blue="0.87230047778548481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <imageReference key="image" image="phone.fill" catalog="system" symbolScale="small"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-05-J4x">
+                                                    <rect key="frame" x="257" y="0.0" width="157" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="tintColor" red="0.0" green="0.41176470590000003" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="917-365-3869">
+                                                        <color key="titleColor" red="0.0" green="0.41214347010000002" blue="0.87230047779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <imageReference key="image" image="message.fill" catalog="system" symbolScale="small"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="ljg-We-Jy4"/>
+                                            </constraints>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arlington,Tx" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvL-rq-Zwb">
+                                            <rect key="frame" x="230" y="215" width="180" height="23"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="23" id="2uv-nB-IWM"/>
+                                                <constraint firstAttribute="width" constant="180" id="XGW-41-qR6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXL-61-ete">
-                                            <rect key="frame" x="105" y="3" width="222" height="85"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="856 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAU-Vd-G7j">
+                                            <rect key="frame" x="48" y="239" width="140" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="140" id="e3X-Y5-YVC"/>
+                                                <constraint firstAttribute="height" constant="21" id="olm-Sv-wMp"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2014 BMW" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2S-lQ-1Fq">
+                                            <rect key="frame" x="0.0" y="175" width="414" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="93s-af-2ws"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4A-Ay-kav">
+                                            <rect key="frame" x="47" y="217" width="159" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="159" id="3P7-gh-rj2"/>
+                                                <constraint firstAttribute="height" constant="21" id="lLw-PV-cCv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollarsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kLj-Fj-OH5">
+                                            <rect key="frame" x="0.0" y="215.5" width="39" height="43"/>
+                                            <color key="tintColor" red="0.062745098040000002" green="0.62352941179999999" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="luZ-8G-Mbu"/>
+                                                <constraint firstAttribute="width" constant="39" id="o4a-Ke-GL2"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="SXL-61-ete" firstAttribute="top" secondItem="qhk-od-ZEK" secondAttribute="top" constant="10" id="2Oj-WG-2b6"/>
+                                        <constraint firstItem="gzN-Vj-DGt" firstAttribute="leading" secondItem="qhk-od-ZEK" secondAttribute="leading" id="6Sg-To-5GK"/>
+                                        <constraint firstItem="q2S-lQ-1Fq" firstAttribute="top" secondItem="SXL-61-ete" secondAttribute="bottom" constant="5" id="8qD-xG-mDH"/>
+                                        <constraint firstItem="gzN-Vj-DGt" firstAttribute="top" secondItem="xAU-Vd-G7j" secondAttribute="bottom" constant="10" id="J6o-eW-jXw"/>
+                                        <constraint firstItem="SXL-61-ete" firstAttribute="leading" secondItem="qhk-od-ZEK" secondAttribute="leading" id="Ldb-UO-oeS"/>
+                                        <constraint firstItem="kLj-Fj-OH5" firstAttribute="top" secondItem="q2S-lQ-1Fq" secondAttribute="bottom" constant="5" id="LeO-ii-fTE"/>
+                                        <constraint firstAttribute="trailing" secondItem="gzN-Vj-DGt" secondAttribute="trailing" id="Ne7-ey-ow9"/>
+                                        <constraint firstAttribute="trailing" secondItem="SXL-61-ete" secondAttribute="trailing" id="OcH-LA-u9F"/>
+                                        <constraint firstItem="xAU-Vd-G7j" firstAttribute="top" secondItem="X4A-Ay-kav" secondAttribute="bottom" constant="1" id="Pf5-pW-eNp"/>
+                                        <constraint firstItem="X4A-Ay-kav" firstAttribute="leading" secondItem="kLj-Fj-OH5" secondAttribute="trailing" constant="8" symbolic="YES" id="RBP-yv-KDM"/>
+                                        <constraint firstItem="kLj-Fj-OH5" firstAttribute="leading" secondItem="qhk-od-ZEK" secondAttribute="leading" id="bWK-Yx-QVr"/>
+                                        <constraint firstItem="q2S-lQ-1Fq" firstAttribute="leading" secondItem="qhk-od-ZEK" secondAttribute="leading" id="btv-Ud-RPb"/>
+                                        <constraint firstItem="lvL-rq-Zwb" firstAttribute="top" secondItem="q2S-lQ-1Fq" secondAttribute="bottom" constant="5" id="dcE-Nx-6ju"/>
+                                        <constraint firstItem="xAU-Vd-G7j" firstAttribute="leading" secondItem="kLj-Fj-OH5" secondAttribute="trailing" constant="9" id="eb6-Kd-Xea"/>
+                                        <constraint firstAttribute="trailing" secondItem="lvL-rq-Zwb" secondAttribute="trailing" constant="4" id="mzP-fI-b7R"/>
+                                        <constraint firstAttribute="trailing" secondItem="q2S-lQ-1Fq" secondAttribute="trailing" id="snq-Gy-P7w"/>
+                                        <constraint firstItem="X4A-Ay-kav" firstAttribute="top" secondItem="q2S-lQ-1Fq" secondAttribute="bottom" constant="7" id="tAp-54-TCU"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="414" height="135"/>
+                                <size key="customSize" width="414" height="300"/>
                                 <connections>
+                                    <outlet property="carDetails" destination="q2S-lQ-1Fq" id="zz0-Ew-9Js"/>
                                     <outlet property="carImageView" destination="SXL-61-ete" id="GLx-eo-Ilx"/>
-                                    <outlet property="carName" destination="Cn5-FR-dqj" id="8tL-di-oy2"/>
+                                    <outlet property="carPrice" destination="X4A-Ay-kav" id="ges-62-nxY"/>
+                                    <outlet property="dealerNumber" destination="e6h-uM-DxT" id="Llh-pg-2Fw"/>
+                                    <outlet property="dealerNumberForText" destination="3d5-05-J4x" id="8pK-IR-czD"/>
+                                    <outlet property="location" destination="lvL-rq-Zwb" id="MgL-q3-4qm"/>
+                                    <outlet property="mileage" destination="xAU-Vd-G7j" id="LHy-dP-NGa"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -90,4 +186,12 @@
             <point key="canvasLocation" x="900.00000000000011" y="75.669642857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

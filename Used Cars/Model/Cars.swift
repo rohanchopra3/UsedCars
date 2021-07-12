@@ -17,12 +17,16 @@ struct cars {
     var Mileage:Double
     var Location:String
     var DealerNumber:String
-    var carImage : Data?
+    var carImage : UIImage?
     var carImageURl:String
 }
-
+// change the url to fetch for more items
 let urlString = "https://carfax-for-consumers.firebaseio.com/assignment.json"
-var imageDownloadCounter = 0 
+
+// helper Variables to implement pagination
+var imageDownloadCounter = 0
+var endimageDownloadCounter = 0
+var interval = 10 
 
 // To make a get request and store data in the cars object
 func makeAPICall(UrlString :String, completionHandler: @escaping ([cars])-> () ) {
@@ -47,7 +51,7 @@ func makeAPICall(UrlString :String, completionHandler: @escaping ([cars])-> () )
             let json = JSON(data)
             var carsObject:[cars] = []
             for (_,subJson):(String, JSON) in json["listings"] {
-                carsObject.append(cars(Year: subJson["year"].int ?? 0 , Make: subJson["make"].string ?? " " , Model: subJson["model"].string ?? " ", Trim: subJson["trim"].string ?? " " , Price: subJson["listPrice"].double ?? 0.0 , Mileage: subJson["mileage"].double ?? 0.0, Location: ((subJson["dealer"]["city"].string ?? "") + "," + (subJson["dealer"]["state"].string ?? " ")), DealerNumber: subJson["dealer"]["phone"].string ?? " ", carImageURl: subJson["images"]["firstPhoto"]["medium"].string ?? " "))
+                carsObject.append(cars(Year: subJson["year"].int ?? 0 , Make: subJson["make"].string ?? " " , Model: subJson["model"].string ?? " ", Trim: subJson["trim"].string ?? " " , Price: subJson["listPrice"].double ?? 0.0 , Mileage: subJson["mileage"].double ?? 0.0, Location: ((subJson["dealer"]["city"].string ?? "") + "," + (subJson["dealer"]["state"].string ?? " ")), DealerNumber: subJson["dealer"]["phone"].string ?? " ", carImageURl: subJson["images"]["firstPhoto"]["large"].string ?? " "))
             }
             completionHandler(carsObject)
         }else{
@@ -56,6 +60,7 @@ func makeAPICall(UrlString :String, completionHandler: @escaping ([cars])-> () )
     }.resume()
 }
 
+// To make a get request and store images in the cars object
 func downloadImages(UrlString:String,completionHandler: @escaping (Data?)-> ()){
     guard let url = URL(string: UrlString) else { return }
     
@@ -71,8 +76,21 @@ func downloadImages(UrlString:String,completionHandler: @escaping (Data?)-> ()){
         if let data = data{
             completionHandler(data)
         }else{
-            print("fail")
-            print(urlString)
+            NSLog("fail with \(urlString)")
         }
     }.resume()
+}
+
+func calculatePaginationParametersfor(interval: Int, total_count: Int){
+    // This function is important as is computes pagination parameters, number of items to fetch.
+    // change the interval parameters for number of items per fetch, default 10
+    if imageDownloadCounter != total_count{
+        
+        if (endimageDownloadCounter + interval) < total_count{
+            endimageDownloadCounter += interval
+        }else{
+            endimageDownloadCounter = total_count
+        }
+        
+    }
 }

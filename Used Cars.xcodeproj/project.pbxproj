@@ -20,6 +20,7 @@
 		847ACD9526963FE800FC4F83 /* Used_CarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847ACD9426963FE800FC4F83 /* Used_CarsTests.swift */; };
 		847ACDA026963FE800FC4F83 /* Used_CarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847ACD9F26963FE800FC4F83 /* Used_CarsUITests.swift */; };
 		847ACDB1269643A300FC4F83 /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847ACDB0269643A300FC4F83 /* Cars.swift */; };
+		848DCE17269CC00E00BDF89A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DCE16269CC00E00BDF89A /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		847ACD9F26963FE800FC4F83 /* Used_CarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Used_CarsUITests.swift; sourceTree = "<group>"; };
 		847ACDA126963FE800FC4F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847ACDB0269643A300FC4F83 /* Cars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cars.swift; sourceTree = "<group>"; };
+		848DCE16269CC00E00BDF89A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		93971F84257185517F91B3B5 /* Pods_Used_Cars_Used_CarsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Used_Cars_Used_CarsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5A9166E7CD5D239E2836D6 /* Pods-Used CarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Used CarsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Used CarsTests/Pods-Used CarsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0A7755C2F39DD3CD3A0754 /* Pods-Used Cars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Used Cars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Used Cars/Pods-Used Cars.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				847ACDAE2696400900FC4F83 /* Views */,
 				847ACDAD2696400100FC4F83 /* Controllers */,
 				847ACD7D26963FE500FC4F83 /* AppDelegate.swift */,
+				848DCE16269CC00E00BDF89A /* Extensions.swift */,
 				847ACD7F26963FE500FC4F83 /* SceneDelegate.swift */,
 				847ACD8626963FE700FC4F83 /* Assets.xcassets */,
 				847ACD8B26963FE700FC4F83 /* Info.plist */,
@@ -427,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8465C51B2699075200D00213 /* CarsCollectionViewCell.swift in Sources */,
+				848DCE17269CC00E00BDF89A /* Extensions.swift in Sources */,
 				847ACD7E26963FE500FC4F83 /* AppDelegate.swift in Sources */,
 				8465C51926982ACB00D00213 /* CarsCollectionViewController.swift in Sources */,
 				847ACDB1269643A300FC4F83 /* Cars.swift in Sources */,
